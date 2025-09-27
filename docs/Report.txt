@@ -1,0 +1,43 @@
+Project Report
+
+1. Introduction
+  During my internship at Avanza Solutions as part of the EFT (Electronic Funds Transfer) training program, I
+developed a role-based access control system using C# (.NET WinForms) and SQL Server. The internship
+was structured to simulate real-world enterprise scenarios and strengthen my technical foundations in software
+development, database design, and approval workflows.
+
+2. Project Overview
+The objective of the project was to design and implement a Maker-Checker (approval) system where user and
+group modifications required review before becoming active. This approach reflects the compliance and security
+standards often seen in financial systems such as EFT solutions.
+Key modules included:
+● User Management: Creation, update, deletion, and role assignment for users.
+● Group Management: Definition of groups with associated permissions.
+● Approval Workflow: Pending changes are routed to a checker for approval or rejection.
+● Audit & History Tracking: Logging old and new values for both users and groups to maintain a clear
+change history.
+
+3. Technical Implementation
+● Frontend: Built with C# and WinForms, providing a user-friendly interface for administrators, checkers,
+and system operators.
+● Backend: Microsoft SQL Server, used to design relational schemas and enforce data integrity with
+foreign keys and constraints.
+● Key Features:
+○ History tables to track updates and deletions.
+○ Permission handling through mapping tables.
+○ Prevented unauthorized edits via read-only review screens.
+○ Approval process with remarks and rejection handling.
+
+4. Learning Outcomes
+Through this project, I strengthened my skills in:
+● C# and .NET WinForms development
+● Database design and normalization in SQL Server
+● Implementation of approval workflows (Maker-Checker principle)
+● Audit trail and change-tracking design
+● Problem-solving, debugging, and end-to-end software testing
+
+5. Conclusion
+This internship provided me with hands-on experience in designing secure, enterprise-grade systems and
+reinforced the importance of auditability and compliance in software solutions. It not only improved my technical
+proficiency, but also gave me exposure to real-world practices in financial technology (FinTech)
+environments.
