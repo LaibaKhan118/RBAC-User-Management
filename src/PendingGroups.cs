@@ -182,7 +182,7 @@ namespace TeacherForm
                         else if (actionType == "DELETE" && existingUserId.HasValue)
                         {
                             // Marking Inactive instead of deleting to preserve data integrity
-                            string updateUser = @"UPDATE User SET isActive=0, 
+                            string updateUser = @"UPDATE Users SET isActive=0, 
                                                 updatedOn=GETDATE(), updatedBy=@checkerId
                                                 WHERE id=@userID";
                             SqlCommand cmd = new SqlCommand(updateUser, conn, transaction);
@@ -254,4 +254,5 @@ namespace TeacherForm
         }
     }
 }
+
 
