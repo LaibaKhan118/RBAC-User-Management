@@ -153,7 +153,7 @@ namespace TeacherForm
                         }
                         else if (actionType == "UPDATE" && existingUserId.HasValue)
                         {
-                            string updateUser = @"UPDATE User SET username=@username, password=@password, isActive=@isActive, 
+                            string updateUser = @"UPDATE Users SET username=@username, password=@password, isActive=@isActive, 
                                                 roleId=@roleId, updatedOn=GETDATE(), updatedBy=@checkerId
                                                 WHERE id=@userID";
                             SqlCommand cmd = new SqlCommand(updateUser, conn, transaction);
@@ -254,3 +254,4 @@ namespace TeacherForm
         }
     }
 }
+
